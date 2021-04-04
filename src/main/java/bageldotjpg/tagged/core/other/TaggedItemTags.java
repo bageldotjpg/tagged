@@ -18,6 +18,7 @@ public class TaggedItemTags {
 	public static final ITag.INamedTag<Item> PARROT_TAME_ITEMS = createTag("parrot_tame_items");
 	public static final ITag.INamedTag<Item> PARROT_POISONOUS_FOOD = createTag("parrot_poisonous_food");
 	public static final ITag.INamedTag<Item> PIG_FOOD = createTag("pig_food");
+	public static final ITag.INamedTag<Item> PIGLIN_FOOD = createTag("piglin_food");
 
 	private static ITag.INamedTag<Item> createTag(String name) {
 		return ItemTags.bind(Tagged.MOD_ID + ":" + name);

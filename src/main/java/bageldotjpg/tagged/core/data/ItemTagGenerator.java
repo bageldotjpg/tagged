@@ -25,5 +25,6 @@ public class ItemTagGenerator extends ItemTagsProvider {
 		this.tag(TaggedItemTags.PARROT_TAME_ITEMS).add(Items.WHEAT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.BEETROOT_SEEDS);
 		this.tag(TaggedItemTags.PARROT_POISONOUS_FOOD).add(Items.COOKIE);
 		this.tag(TaggedItemTags.PIG_FOOD).add(Items.CARROT, Items.POTATO, Items.BEETROOT);
+		this.tag(TaggedItemTags.PIGLIN_FOOD).add(Items.PORKCHOP, Items.COOKED_PORKCHOP);
 	}
 }

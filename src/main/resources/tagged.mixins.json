@@ -9,6 +9,7 @@
     "ItemMixin",
     "ParrotEntityMixin",
     "PigEntityMixin",
+    "PiglinTasksMixin",
     "RabbitEntityMixin",
     "RespawnAnchorBlockMixin"
   ],
