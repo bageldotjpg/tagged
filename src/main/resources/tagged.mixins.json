@@ -5,8 +5,10 @@
   "minVersion": "0.8",
   "refmap": "tagged.refmap.json",
   "mixins": [
+    "CatEntityMixin",
     "ChickenEntityMixin",
     "ConduitTileEntityMixin",
+    "CowEntityMixin",
     "HoglinEntityMixin",
     "ItemEntityMixin",
     "ItemMixin",
@@ -15,7 +17,9 @@
     "PiglinTasksMixin",
     "PortalSizeMixin",
     "RabbitEntityMixin",
-    "RespawnAnchorBlockMixin"
+    "RespawnAnchorBlockMixin",
+    "SheepEntityMixin",
+    "StriderEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

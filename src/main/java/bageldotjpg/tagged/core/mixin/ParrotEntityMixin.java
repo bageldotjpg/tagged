@@ -36,7 +36,7 @@ public abstract class ParrotEntityMixin extends ShoulderRidingEntity {
 
 	@Redirect(method = "mobInteract", at = @At(value = "INVOKE", target = "Ljava/util/Set;contains(Ljava/lang/Object;)Z"))
 	private boolean mobInteract(Set set, Object item) {
-		return TaggedItemTags.PARROT_TAME_ITEMS.contains((Item) item);
+		return TaggedItemTags.PARROT_FOOD.contains((Item) item);
 	}
 
 	@Redirect(method = "mobInteract", at = @At(value = "FIELD", opcode = Opcodes.GETSTATIC, target = "Lnet/minecraft/entity/passive/ParrotEntity;POISONOUS_FOOD:Lnet/minecraft/item/Item;"))

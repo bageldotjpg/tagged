@@ -21,12 +21,17 @@ public class ItemTagGenerator extends ItemTagsProvider {
 
 		this.tag(TaggedItemTags.RESPAWN_ANCHOR_FUEL).add(Items.GLOWSTONE);
 
+		this.tag(TaggedItemTags.CAT_FOOD).add(Items.COD, Items.SALMON);
 		this.tag(TaggedItemTags.CHICKEN_FOOD).add(Items.WHEAT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.BEETROOT_SEEDS);
+		this.tag(TaggedItemTags.COW_FOOD).add(Items.WHEAT);
 		this.tag(TaggedItemTags.HOGLIN_FOOD).add(Items.CRIMSON_FUNGUS);
 		this.tag(TaggedItemTags.RABBIT_FOOD).add(Items.CARROT, Items.GOLDEN_CARROT, Items.DANDELION);
 		this.tag(TaggedItemTags.PARROT_POISONOUS_FOOD).add(Items.COOKIE);
-		this.tag(TaggedItemTags.PARROT_TAME_ITEMS).add(Items.WHEAT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.BEETROOT_SEEDS);
+		this.tag(TaggedItemTags.PARROT_FOOD).add(Items.WHEAT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.BEETROOT_SEEDS);
 		this.tag(TaggedItemTags.PIG_FOOD).add(Items.CARROT, Items.POTATO, Items.BEETROOT);
 		this.tag(TaggedItemTags.PIGLIN_FOOD).add(Items.PORKCHOP, Items.COOKED_PORKCHOP);
+		this.tag(TaggedItemTags.SHEEP_FOOD).add(Items.WHEAT);
+		this.tag(TaggedItemTags.STRIDER_FOOD).add(Items.WARPED_FUNGUS);
+		this.tag(TaggedItemTags.STRIDER_TEMPT_ITEMS).addTag(TaggedItemTags.STRIDER_FOOD).add(Items.WARPED_FUNGUS_ON_A_STICK);
 	}
 }
