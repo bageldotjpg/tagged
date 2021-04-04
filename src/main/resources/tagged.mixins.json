@@ -10,6 +10,7 @@
     "ChickenEntityMixin",
     "ConduitTileEntityMixin",
     "CowEntityMixin",
+    "DolphinEntityMixin",
     "FoxEntityMixin",
     "HoglinEntityMixin",
     "ItemEntityMixin",
@@ -22,7 +23,8 @@
     "RabbitEntityMixin",
     "RespawnAnchorBlockMixin",
     "SheepEntityMixin",
-    "StriderEntityMixin"
+    "StriderEntityMixin",
+    "WolfEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
