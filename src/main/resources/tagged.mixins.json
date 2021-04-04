@@ -5,7 +5,9 @@
   "minVersion": "0.8",
   "refmap": "tagged.refmap.json",
   "mixins": [
+    "ChickenEntityMixin",
     "ConduitTileEntityMixin",
+    "HoglinEntityMixin",
     "ItemEntityMixin",
     "ItemMixin",
     "ParrotEntityMixin",
