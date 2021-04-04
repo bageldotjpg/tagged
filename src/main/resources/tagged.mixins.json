@@ -20,6 +20,7 @@
     "ParrotEntityMixin",
     "PigEntityMixin",
     "PiglinTasksMixin",
+    "PistonBlockMixin",
     "PortalSizeMixin",
     "RabbitEntityMixin",
     "RespawnAnchorBlockMixin",

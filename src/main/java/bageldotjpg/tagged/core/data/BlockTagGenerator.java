@@ -15,6 +15,7 @@ public class BlockTagGenerator extends BlockTagsProvider {
 	@Override
 	protected void addTags() {
 		this.tag(TaggedBlockTags.CONDUIT_BASE_BLOCKS).add(Blocks.PRISMARINE, Blocks.PRISMARINE_BRICKS, Blocks.SEA_LANTERN, Blocks.DARK_PRISMARINE);
+		this.tag(TaggedBlockTags.IMMOVABLE_BY_PISTON).add(Blocks.OBSIDIAN, Blocks.CRYING_OBSIDIAN, Blocks.RESPAWN_ANCHOR);
 		this.tag(TaggedBlockTags.NETHER_PORTAL_BASE_BLOCKS).add(Blocks.OBSIDIAN);
 	}
 }
