@@ -19,6 +19,7 @@ public class Tagged {
 		bus.addListener(this::dataSetup);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
+
 	private void dataSetup(GatherDataEvent event) {
 		DataGenerator dataGenerator = event.getGenerator();
 		ExistingFileHelper existingFileHelper = event.getExistingFileHelper();

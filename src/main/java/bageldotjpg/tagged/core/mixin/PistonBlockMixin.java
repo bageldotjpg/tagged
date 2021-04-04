@@ -1,7 +1,6 @@
 package bageldotjpg.tagged.core.mixin;
 
 import bageldotjpg.tagged.core.other.TaggedBlockTags;
-import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.PistonBlock;
