@@ -22,6 +22,7 @@ public class ItemTagGenerator extends ItemTagsProvider {
 		this.tag(TaggedItemTags.MEAT).add(Items.BEEF, Items.COOKED_BEEF, Items.CHICKEN, Items.COOKED_CHICKEN, Items.MUTTON, Items.COOKED_MUTTON, Items.PORKCHOP, Items.COOKED_PORKCHOP, Items.RABBIT, Items.COOKED_RABBIT, Items.ROTTEN_FLESH);
 		this.tag(TaggedItemTags.RESPAWN_ANCHOR_FUEL).add(Items.GLOWSTONE);
 
+		this.tag(TaggedItemTags.BEE_FOOD).addTag(ItemTags.FLOWERS);
 		this.tag(TaggedItemTags.CAT_FOOD).add(Items.COD, Items.SALMON);
 		this.tag(TaggedItemTags.CHICKEN_FOOD).add(Items.WHEAT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.BEETROOT_SEEDS);
 		this.tag(TaggedItemTags.COW_FOOD).add(Items.WHEAT);
@@ -29,6 +30,7 @@ public class ItemTagGenerator extends ItemTagsProvider {
 		this.tag(TaggedItemTags.FOX_FOOD).add(Items.SWEET_BERRIES);
 		this.tag(TaggedItemTags.HOGLIN_FOOD).add(Items.CRIMSON_FUNGUS);
 		this.tag(TaggedItemTags.HORSE_FOOD).add(Items.WHEAT, Items.SUGAR, Items.HAY_BLOCK, Items.APPLE, Items.GOLDEN_CARROT, Items.GOLDEN_APPLE, Items.ENCHANTED_GOLDEN_APPLE);
+		this.tag(TaggedItemTags.IRON_GOLEM_REPAIR_ITEMS).add(Items.IRON_INGOT);
 		this.tag(TaggedItemTags.LLAMA_FOOD).add(Items.WHEAT, Items.HAY_BLOCK);
 		this.tag(TaggedItemTags.PARROT_POISONOUS_FOOD).add(Items.COOKIE);
 		this.tag(TaggedItemTags.PARROT_FOOD).add(Items.WHEAT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.BEETROOT_SEEDS);
