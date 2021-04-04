@@ -38,6 +38,7 @@ public class ItemTagGenerator extends ItemTagsProvider {
 		this.tag(TaggedItemTags.SHEEP_FOOD).add(Items.WHEAT);
 		this.tag(TaggedItemTags.STRIDER_FOOD).add(Items.WARPED_FUNGUS);
 		this.tag(TaggedItemTags.STRIDER_TEMPT_ITEMS).addTag(TaggedItemTags.STRIDER_FOOD).add(Items.WARPED_FUNGUS_ON_A_STICK);
+		this.tag(TaggedItemTags.TURTLE_FOOD).add(Items.SEAGRASS);
 		this.tag(TaggedItemTags.WOLF_FOOD).addTag(TaggedItemTags.MEAT);
 	}
 }

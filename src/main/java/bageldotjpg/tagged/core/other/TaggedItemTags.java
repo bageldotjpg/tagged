@@ -28,6 +28,7 @@ public class TaggedItemTags {
 	public static final ITag.INamedTag<Item> SHEEP_FOOD = createTag("sheep_food");
 	public static final ITag.INamedTag<Item> STRIDER_FOOD = createTag("strider_food");
 	public static final ITag.INamedTag<Item> STRIDER_TEMPT_ITEMS = createTag("strider_tempt_items");
+	public static final ITag.INamedTag<Item> TURTLE_FOOD = createTag("turtle_food");
 	public static final ITag.INamedTag<Item> WOLF_FOOD = createTag("wolf_food");
 
 	private static ITag.INamedTag<Item> createTag(String name) {

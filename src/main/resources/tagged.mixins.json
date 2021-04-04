@@ -24,6 +24,7 @@
     "RespawnAnchorBlockMixin",
     "SheepEntityMixin",
     "StriderEntityMixin",
+    "TurtleEntityMixin",
     "WolfEntityMixin"
   ],
   "injectors": {
