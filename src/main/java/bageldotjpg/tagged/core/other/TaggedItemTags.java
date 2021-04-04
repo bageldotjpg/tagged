@@ -17,6 +17,7 @@ public class TaggedItemTags {
 	public static final ITag.INamedTag<Item> RABBIT_FOOD = createTag("rabbit_food");
 	public static final ITag.INamedTag<Item> PARROT_TAME_ITEMS = createTag("parrot_tame_items");
 	public static final ITag.INamedTag<Item> PARROT_POISONOUS_FOOD = createTag("parrot_poisonous_food");
+	public static final ITag.INamedTag<Item> PIG_FOOD = createTag("pig_food");
 
 	private static ITag.INamedTag<Item> createTag(String name) {
 		return ItemTags.bind(Tagged.MOD_ID + ":" + name);
@@ -25,6 +26,7 @@ public class TaggedItemTags {
 
 	/* Planned tags
 	 *
+	 * villager_food
 	 * iron_golem_repair_items
 	 * wolf_tame_items
 	 * cat_tame_items
@@ -39,7 +41,6 @@ public class TaggedItemTags {
 	 * horse_food
 	 * llama_food
 	 * panda_tempt_items
-	 * pig_food
 	 * sheep_food
 	 * strider_food
 	 *

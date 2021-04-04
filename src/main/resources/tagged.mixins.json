@@ -8,6 +8,7 @@
     "ItemEntityMixin",
     "ItemMixin",
     "ParrotEntityMixin",
+    "PigEntityMixin",
     "RabbitEntityMixin",
     "RespawnAnchorBlockMixin"
   ],
