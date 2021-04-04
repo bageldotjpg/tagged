@@ -5,11 +5,13 @@
   "minVersion": "0.8",
   "refmap": "tagged.refmap.json",
   "mixins": [
+    "ConduitTileEntityMixin",
     "ItemEntityMixin",
     "ItemMixin",
     "ParrotEntityMixin",
     "PigEntityMixin",
     "PiglinTasksMixin",
+    "PortalSizeMixin",
     "RabbitEntityMixin",
     "RespawnAnchorBlockMixin"
   ],

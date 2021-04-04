@@ -4,9 +4,7 @@ import bageldotjpg.tagged.core.Tagged;
 import net.minecraft.item.Item;
 import net.minecraft.tags.ITag;
 import net.minecraft.tags.ItemTags;
-import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(modid = Tagged.MOD_ID)
 public class TaggedItemTags {
 	public static final ITag.INamedTag<Item> FIRE_RESISTANT = createTag("fire_resistant");
 	public static final ITag.INamedTag<Item> BLAST_RESISTANT = createTag("blast_resistant");

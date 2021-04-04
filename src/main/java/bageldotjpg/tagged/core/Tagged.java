@@ -23,6 +23,7 @@ public class Tagged {
 		DataGenerator dataGenerator = event.getGenerator();
 		ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 		BlockTagGenerator blockTagGen = new BlockTagGenerator(dataGenerator, existingFileHelper);
+		dataGenerator.addProvider(blockTagGen);
 		dataGenerator.addProvider(new ItemTagGenerator(dataGenerator, blockTagGen, existingFileHelper));
 	}
 }
