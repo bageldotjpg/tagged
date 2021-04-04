@@ -21,4 +21,27 @@ public class TaggedItemTags {
 	private static ITag.INamedTag<Item> createTag(String name) {
 		return ItemTags.bind(Tagged.MOD_ID + ":" + name);
 	}
+
+
+	/* Planned tags
+	 *
+	 * iron_golem_repair_items
+	 * wolf_tame_items
+	 * cat_tame_items
+	 * dolphin_trust_items
+	 * fox_food
+	 * panda_food
+	 * bee_food
+	 * cat_food
+	 * chicken_food
+	 * cow_food
+	 * hoglin_food
+	 * horse_food
+	 * llama_food
+	 * panda_tempt_items
+	 * pig_food
+	 * sheep_food
+	 * strider_food
+	 *
+	 */
 }

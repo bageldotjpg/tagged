@@ -11,7 +11,7 @@ license = "https://github.com/bageldotjpg/tagged/blob/main/LICENSE.txt"
     authors = "bageldotjpg"
     displayName = "Tagged"
     description = '''
-    Makes many things that should be tags into tags
+    Adds tons of new tags to allow further customization of the game!
     '''
 
 [[dependencies.tagged]]
