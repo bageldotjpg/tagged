@@ -14,7 +14,7 @@ public class TaggedItemTags {
 
 	public static final ITag.INamedTag<Item> RESPAWN_ANCHOR_FUEL = createTag("respawn_anchor_fuel");
 
-	public static final ITag.INamedTag<Item> RABBIT_TEMPT_ITEMS = createTag("rabbit_tempt_items");
+	public static final ITag.INamedTag<Item> RABBIT_FOOD = createTag("rabbit_food");
 	public static final ITag.INamedTag<Item> PARROT_TAME_ITEMS = createTag("parrot_tame_items");
 	public static final ITag.INamedTag<Item> PARROT_POISONOUS_FOOD = createTag("parrot_poisonous_food");
 

@@ -25,11 +25,11 @@ public abstract class RabbitEntityMixin extends AnimalEntity {
 
 	@Inject(method = "isTemptingItem", at = @At("HEAD"), cancellable = true)
 	private void mobInteract(Item item, CallbackInfoReturnable<Boolean> cir) {
-		cir.setReturnValue(item.is(TaggedItemTags.RABBIT_TEMPT_ITEMS));
+		cir.setReturnValue(item.is(TaggedItemTags.RABBIT_FOOD));
 	}
 
 	@Redirect(method = "registerGoals", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/ai/goal/GoalSelector;addGoal(ILnet/minecraft/entity/ai/goal/Goal;)V", ordinal = 3))
 	private void registerGoals(GoalSelector goalSelector, int priority, Goal goal) {
-		goalSelector.addGoal(3, new TemptGoal(this, 1.0D, Ingredient.of(TaggedItemTags.RABBIT_TEMPT_ITEMS), false));
+		goalSelector.addGoal(3, new TemptGoal(this, 1.0D, Ingredient.of(TaggedItemTags.RABBIT_FOOD), false));
 	}
 }

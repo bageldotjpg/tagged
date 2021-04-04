@@ -21,7 +21,7 @@ public class ItemTagGenerator extends ItemTagsProvider {
 
 		this.tag(TaggedItemTags.RESPAWN_ANCHOR_FUEL).add(Items.GLOWSTONE);
 
-		this.tag(TaggedItemTags.RABBIT_TEMPT_ITEMS).add(Items.CARROT, Items.GOLDEN_CARROT, Items.DANDELION);
+		this.tag(TaggedItemTags.RABBIT_FOOD).add(Items.CARROT, Items.GOLDEN_CARROT, Items.DANDELION);
 		this.tag(TaggedItemTags.PARROT_TAME_ITEMS).add(Items.WHEAT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.BEETROOT_SEEDS);
 		this.tag(TaggedItemTags.PARROT_POISONOUS_FOOD).add(Items.COOKIE);
 	}
