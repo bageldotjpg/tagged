@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "bageldotjpg.tagged.core.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.8",
+  "refmap": "tagged.refmap.json",
+  "mixins": [
+    "ItemEntityMixin",
+    "ItemMixin",
+    "ParrotEntityMixin",
+    "RabbitEntityMixin",
+    "RespawnAnchorBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

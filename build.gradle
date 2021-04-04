@@ -1,0 +1,91 @@
+buildscript {
+    repositories {
+        maven { url = "https://files.minecraftforge.net/maven" }
+        maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: "net.minecraftforge.gradle", name: "ForgeGradle", version: "4.1.+", changing: true
+        classpath group: "org.spongepowered", name: "mixingradle", version: "0.7-SNAPSHOT"
+    }
+}
+
+apply plugin: "net.minecraftforge.gradle"
+apply plugin: "eclipse"
+apply plugin: "maven-publish"
+apply plugin: "org.spongepowered.mixin"
+
+mixin {
+    add sourceSets.main, project.modId + ".refmap.json"
+}
+
+version = "${project.minecraft}-${project.modVersion}"
+group = "bageldotjpg"
+archivesBaseName = project.modId
+
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
+
+minecraft {
+    mappings channel: "official", version: project.minecraft
+    accessTransformer = file("src/main/resources/META-INF/accesstransformer.cfg")
+    runs {
+        client {
+            workingDirectory project.file("run")
+            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
+            property "forge.logging.console.level", "debug"
+            property "mixin.env.disableRefMap", "true"
+            arg "-mixin.config=tagged.mixins.json"
+            mods {
+                tagged {
+                    source sourceSets.main
+                }
+            }
+        }
+        server {
+            workingDirectory project.file("run")
+            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
+            property "forge.logging.console.level", "debug"
+            property "mixin.env.disableRefMap", "true"
+            arg "-mixin.config=tagged.mixins.json"
+            mods {
+                tagged {
+                    source sourceSets.main
+                }
+            }
+        }
+        data {
+            workingDirectory project.file("run")
+            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
+            property "forge.logging.console.level", "debug"
+            args "--mod", "tagged", "--all", "--output", file("src/generated/resources/")
+            mods {
+                tagged {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${project.minecraft}-${project.forge}"
+}
+
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : project.modName,
+                "Specification-Vendor"    : "bageldotjpg",
+                "Specification-Version"   : "1",
+                "Implementation-Title"    : project.modName,
+                "Implementation-Version"  : project.modVersion,
+                "Implementation-Vendor"   : "bageldotjpg",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+                "MixinConfigs"            : project.modId + ".mixins.json"
+        ])
+    }
+}

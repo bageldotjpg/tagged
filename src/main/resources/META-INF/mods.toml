@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "[32,)"
+issueTrackerURL = "https://github.com/bageldotjpg/tagged/issues"
+license = "https://github.com/bageldotjpg/tagged/blob/main/LICENSE.txt"
+
+[[mods]]
+    modId = "tagged"
+    version = "${file.jarVersion}"
+    logoFile = "logo.png"
+    itemIcon = "minecraft:name_tag"
+    authors = "bageldotjpg"
+    displayName = "Tagged"
+    description = '''
+    Makes many things that should be tags into tags
+    '''
+
+[[dependencies.tagged]]
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "[1.16.5,1.17)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.tagged]]
+    modId = "forge"
+    mandatory = true
+    versionRange = "[36.1.0,)"
+    ordering = "NONE"
+    side = "BOTH"
