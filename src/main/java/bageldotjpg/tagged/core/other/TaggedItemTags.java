@@ -9,7 +9,11 @@ public class TaggedItemTags {
 	public static final ITag.INamedTag<Item> BLAST_RESISTANT = createTag("blast_resistant");
 	public static final ITag.INamedTag<Item> CACTUS_RESISTANT = createTag("cactus_resistant");
 	public static final ITag.INamedTag<Item> FIRE_RESISTANT = createTag("fire_resistant");
+
 	public static final ITag.INamedTag<Item> MEAT = createTag("meat");
+
+	public static final ITag.INamedTag<Item> BREWING_STAND_FUEL = createTag("brewing_stand_fuel");
+	public static final ITag.INamedTag<Item> ENCHANTING_TABLE_PAYMENT_ITEMS = createTag("enchanting_table_payment_items");
 	public static final ITag.INamedTag<Item> RESPAWN_ANCHOR_FUEL = createTag("respawn_anchor_fuel");
 
 	public static final ITag.INamedTag<Item> BEE_FOOD = createTag("bee_food");

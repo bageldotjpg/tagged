@@ -19,8 +19,12 @@ public class ItemTagGenerator extends ItemTagsProvider {
 		this.tag(TaggedItemTags.BLAST_RESISTANT).add(Items.NETHER_STAR);
 		this.tag(TaggedItemTags.CACTUS_RESISTANT);
 		this.tag(TaggedItemTags.FIRE_RESISTANT).add(Items.NETHERITE_INGOT, Items.NETHERITE_SCRAP, Items.NETHERITE_SWORD, Items.NETHERITE_SHOVEL, Items.NETHERITE_PICKAXE, Items.NETHERITE_AXE, Items.NETHERITE_HOE, Items.NETHERITE_HELMET, Items.NETHERITE_CHESTPLATE, Items.NETHERITE_LEGGINGS, Items.NETHERITE_BOOTS, Items.NETHERITE_BLOCK, Items.ANCIENT_DEBRIS);
-		this.tag(TaggedItemTags.MEAT).add(Items.BEEF, Items.COOKED_BEEF, Items.CHICKEN, Items.COOKED_CHICKEN, Items.MUTTON, Items.COOKED_MUTTON, Items.PORKCHOP, Items.COOKED_PORKCHOP, Items.RABBIT, Items.COOKED_RABBIT, Items.ROTTEN_FLESH);
+
+		this.tag(TaggedItemTags.BREWING_STAND_FUEL).add(Items.BLAZE_POWDER);
+		this.tag(TaggedItemTags.ENCHANTING_TABLE_PAYMENT_ITEMS).add(Items.LAPIS_LAZULI);
 		this.tag(TaggedItemTags.RESPAWN_ANCHOR_FUEL).add(Items.GLOWSTONE);
+
+		this.tag(TaggedItemTags.MEAT).add(Items.BEEF, Items.COOKED_BEEF, Items.CHICKEN, Items.COOKED_CHICKEN, Items.MUTTON, Items.COOKED_MUTTON, Items.PORKCHOP, Items.COOKED_PORKCHOP, Items.RABBIT, Items.COOKED_RABBIT, Items.ROTTEN_FLESH);
 
 		this.tag(TaggedItemTags.BEE_FOOD).addTag(ItemTags.FLOWERS);
 		this.tag(TaggedItemTags.CAT_FOOD).add(Items.COD, Items.SALMON);
