@@ -24,7 +24,7 @@ public abstract class RabbitEntityMixin extends AnimalEntity {
 	}
 
 	@Inject(method = "isTemptingItem", at = @At("HEAD"), cancellable = true)
-	private void mobInteract(Item item, CallbackInfoReturnable<Boolean> cir) {
+	private void isTemptingItem(Item item, CallbackInfoReturnable<Boolean> cir) {
 		cir.setReturnValue(item.is(TaggedItemTags.RABBIT_FOOD));
 	}
 
