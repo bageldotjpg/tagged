@@ -26,8 +26,9 @@ public class TaggedItemTags {
 	public static final ITag.INamedTag<Item> HORSE_FOOD = createTag("horse_food");
 	public static final ITag.INamedTag<Item> IRON_GOLEM_REPAIR_ITEMS = createTag("iron_golem_repair_items");
 	public static final ITag.INamedTag<Item> LLAMA_FOOD = createTag("llama_food");
-	public static final ITag.INamedTag<Item> PARROT_FOOD = createTag("parrot_food");
+	public static final ITag.INamedTag<Item> OCELOT_FOOD = createTag("ocelot_food");
 	public static final ITag.INamedTag<Item> PARROT_POISONOUS_FOOD = createTag("parrot_poisonous_food");
+	public static final ITag.INamedTag<Item> PARROT_TAME_ITEMS = createTag("parrot_tame_items");
 	public static final ITag.INamedTag<Item> PIG_FOOD = createTag("pig_food");
 	public static final ITag.INamedTag<Item> PIGLIN_FOOD = createTag("piglin_food");
 	public static final ITag.INamedTag<Item> RABBIT_FOOD = createTag("rabbit_food");
@@ -36,6 +37,7 @@ public class TaggedItemTags {
 	public static final ITag.INamedTag<Item> STRIDER_TEMPT_ITEMS = createTag("strider_tempt_items");
 	public static final ITag.INamedTag<Item> TURTLE_FOOD = createTag("turtle_food");
 	public static final ITag.INamedTag<Item> WOLF_FOOD = createTag("wolf_food");
+	public static final ITag.INamedTag<Item> WOLF_TAME_ITEMS = createTag("wolf_tame_items");
 
 	private static ITag.INamedTag<Item> createTag(String name) {
 		return ItemTags.bind(Tagged.MOD_ID + ":" + name);
@@ -44,11 +46,7 @@ public class TaggedItemTags {
 
 	/* Planned tags
 	 *
-	 * enchanting_table_payment_items
-	 * brewing_stand_fuel
 	 * villager_food
-	 * iron_golem_repair_items
-	 * wolf_tame_items
 	 * panda_food
 	 * panda_tempt_items
 	 *

@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class TurtleEntityPlayerTemptGoalMixin {
 
 	@Inject(method = "shouldFollowItem", at = @At("HEAD"), cancellable = true)
-	private static void shouldFollowItem(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
+	private void shouldFollowItem(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
 		cir.setReturnValue(stack.getItem().is(TaggedItemTags.TURTLE_FOOD));
 	}
 }
