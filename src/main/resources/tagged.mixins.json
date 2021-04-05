@@ -25,6 +25,7 @@
     "ItemMixin",
     "LlamaEntityMixin",
     "OcelotEntityMixin",
+    "PandaEntityMixin",
     "ParrotEntityMixin",
     "PigEntityMixin",
     "PiglinTasksMixin",

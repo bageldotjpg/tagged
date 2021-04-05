@@ -27,6 +27,8 @@ public class TaggedItemTags {
 	public static final ITag.INamedTag<Item> IRON_GOLEM_REPAIR_ITEMS = createTag("iron_golem_repair_items");
 	public static final ITag.INamedTag<Item> LLAMA_FOOD = createTag("llama_food");
 	public static final ITag.INamedTag<Item> OCELOT_FOOD = createTag("ocelot_food");
+	public static final ITag.INamedTag<Item> PANDA_FOOD = createTag("panda_food");
+	public static final ITag.INamedTag<Item> PANDA_SNACKS = createTag("panda_snacks");
 	public static final ITag.INamedTag<Item> PARROT_POISONOUS_FOOD = createTag("parrot_poisonous_food");
 	public static final ITag.INamedTag<Item> PARROT_TAME_ITEMS = createTag("parrot_tame_items");
 	public static final ITag.INamedTag<Item> PIG_FOOD = createTag("pig_food");
