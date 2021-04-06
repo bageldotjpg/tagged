@@ -16,6 +16,7 @@
     "ConduitTileEntityMixin",
     "CowEntityMixin",
     "DolphinEntityMixin",
+    "DungeonsFeatureMixin",
     "EnchantmentContainerMixin",
     "EnchantmentContainerSlotMixin",
     "FoxEntityMixin",
